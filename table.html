@@ -1,0 +1,53 @@
+<html>
+<head>
+    <script src="table.js"></script>
+    <link href="common.css" rel="stylesheet">
+    <link href="table.css" rel="stylesheet">
+</head>
+<body>
+
+<label for="name">Name: </label>
+<input type="text" id="name">
+
+<label for="age">Age: </label>
+<input type="number" id="age">
+
+<label for="city">City: </label>
+<input type="text" id="city">
+
+<button onclick="addRecordToTable_2()">Save</button>
+
+<br>
+<br>
+
+
+<table id="customers">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Operation</th>
+    </tr>
+    </thead>
+    <tbody id="customersBody">
+        <tr>
+            <td>John</td>
+            <td>35</td>
+            <td>Haifa</td>
+            <td>
+                <button onclick="deleteRow(this)">Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>22</td>
+            <td>Tel-Aviv</td>
+            <td>
+                <button onclick="deleteRow(this)">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>

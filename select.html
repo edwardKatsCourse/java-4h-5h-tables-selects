@@ -1,0 +1,75 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="select.js"></script>
+    <link href="common.css" rel="stylesheet">
+    <link href="table.css" rel="stylesheet">
+</head>
+<body>
+
+<label for="cityAddEnglish">Add City English</label>
+<input type="text" id="cityAddEnglish">
+
+<label for="cityAddRussian">Add City Russian</label>
+<input type="text" id="cityAddRussian">
+
+<button onclick="addCity()">Add City</button>
+<br>
+<br>
+<br>
+<hr>
+<br>
+<br>
+<br>
+
+<label for="name">Name: </label>
+<input type="text" id="name">
+
+<label for="age">Age: </label>
+<input type="number" id="age">
+
+<label for="city">City: </label>
+<select id="city">
+    <option disabled selected>-----------</option>
+    <option value="Haifa">Хайфа</option>
+    <option value="Tel-Aviv">Тель-Авив</option>
+    <option value="Kefar-Sava">Кфар Саба</option>
+    <option value="Raanana">Раанана</option>
+</select>
+
+<button onclick="addRecordToTable_2()">Save</button>
+
+<br>
+<br>
+
+
+<table id="customers">
+    <thead>
+    <tr>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Operation</th>
+    </tr>
+    </thead>
+    <tbody id="customersBody">
+        <tr>
+            <td>John</td>
+            <td>35</td>
+            <td>Haifa</td>
+            <td>
+                <button onclick="deleteRow(this)">Remove</button>
+            </td>
+        </tr>
+        <tr>
+            <td>Alice</td>
+            <td>22</td>
+            <td>Tel-Aviv</td>
+            <td>
+                <button onclick="deleteRow(this)">Remove</button>
+            </td>
+        </tr>
+    </tbody>
+</table>
+</body>
+</html>
